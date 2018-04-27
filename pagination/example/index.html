@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>分页插件</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: #f1f1f1;
+    }
+    a, a:hover {
+      text-decoration: none;
+    }
+    .ym-mod{
+      text-align: center;
+    }
+    .ym-mod .ym-page{
+      color: #959595;
+      font-size: 12px;
+    }
+    .ym-mod .ym-page .ym-page-linkBox{
+      float: left;
+      display: inline;
+    }
+    .ym-mod .ym-page .ym-page-linkBox:after{
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+    .ym-page .ym-page-linkBox .ym-page-prev,
+    .ym-page .ym-page-linkBox .ym-page-item,
+    .ym-page .ym-page-linkBox .ym-page-omit,
+    .ym-page .ym-page-linkBox .ym-page-next{
+      float: left;
+      display: inline;
+      margin-left: 8px;
+      padding: 0 6px;
+      height: 30px;
+      line-height: 32px;
+      min-width: 18px;
+      border: 1px solid #fff;
+      background-color: #fff;
+      text-align: center;
+      font-size: 12px;
+      user-select: none;
+    }
+    .ym-page .ym-page-linkBox .ym-page-item:hover,
+    .ym-page .ym-page-linkBox .ym-page-item.active {
+      border: 1px solid #316ccb;
+      background: #fff;
+      color: #316ccb;
+      cursor: pointer;
+    }
+    .ym-page .ym-page-linkBox .ym-page-prev:hover,
+    .ym-page .ym-page-linkBox .ym-page-next:hover {
+      cursor: pointer;
+    }
+    .ym-page .ym-page-linkBox .ym-page-prev.disabled,
+    .ym-page .ym-page-linkBox .ym-page-next.disabled {
+      border-color: #fff;
+      background: #fff;
+      color: #e5e5e5;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <div class="ym-mod">
+    <div class="ym-page" id="page" total-size="165" total="9900" size="60" index="2" style="display: inline-block;">
+      <div class="ym-page-linkBox">
+        <a class="ym-page-prev"><</a>
+        <a data-number="0" class="ym-page-item">1</a>
+        <a data-number="1" class="ym-page-item">2</a>
+        <a data-number="2" class="ym-page-item">3</a>
+        <a data-number="3" class="ym-page-item">4</a>
+        <a data-number="4" class="ym-page-item">5</a>
+        <a data-number="5" class="ym-page-item">6</a>
+        <a data-number="6" class="ym-page-item">7</a>
+        <span class="ym-page-omit">...</span>
+        <a data-number="164" class="ym-page-item">165</a>
+        <a class="ym-page-next">></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
